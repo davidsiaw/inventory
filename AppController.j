@@ -45,7 +45,8 @@
 
 - (void)pasteboard:(CPPasteboard)aPasteboard provideDataForType:(CPString)aType
 {
-    if (aType == "InventoryDragType") {
+    if (aType == "InventoryDragType")
+    {
         var myData = [CPKeyedArchiver archivedDataWithRootObject: itemView];
         [aPasteboard setData:myData forType:aType];
 
